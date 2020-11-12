@@ -12,6 +12,10 @@ def index():
     """Pagina principal."""
     return render_template('index.html')
 
+@app.route('/formulario')
+def formulario():
+    """Formulario para añadir datos."""
+    return render_template('formulario.html')
 
 '''
  API REST

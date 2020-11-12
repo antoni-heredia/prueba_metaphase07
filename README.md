@@ -14,3 +14,5 @@
 ## Documentación
 
 En esta sección se encontrara toda la documentación. 
+
+### Instalación del entorno
