@@ -16,3 +16,16 @@
 En esta sección se encontrara toda la documentación. 
 
 ### Instalación del entorno
+
+Debermos tener python y pip instalados. 
+
+Para poder instalar las dependencias basta con ejecutar el siguiente comando:
+```
+pip install -r requeriments.txt
+```
+
+Para ejecutar la aplicación deberemos ejecutar:
+
+```
+python main.py
+```
