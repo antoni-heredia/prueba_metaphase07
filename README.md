@@ -14,8 +14,12 @@
 ## Documentación
 
 En esta sección se encontrara toda la documentación. 
-
-### Instalación del entorno
+## Listado de rutas
+- / -> Aqui nos encontramos el listado de todos las llamadas
+- /formulario -> Aqui nos encontramos el formulario para enviar valores
+- /doc -> Encontramos la información de los endpoints
+- /v1/historial -> Nos devuelve el historial de todas las llamadas
+- /v1/suma -> para poder realizar la suma de los parámetros
 
 Debermos tener python y pip instalados. 
 
