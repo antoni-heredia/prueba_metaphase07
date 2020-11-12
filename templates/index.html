@@ -18,13 +18,16 @@
   <script>
 
     function cargarDatos() {
+      //Realizamos una llamada a la api para obtener los datos
       $.ajax({
         url: '/v1/historial',
         // 
         type: 'GET',
         success: function (data) {
           tableBody = $("table tbody");
+          //eliminamos el contenido de la tabla
           tableBody.empty();
+          //Para cada elemento añadimos una nueva fila a la tabla
           data.forEach(element => tableBody.append("<tr> <th scope='row'>" + element["numero_llamada"] + "</th> <td>" + element["suma"] + "</td> <td>" + element["datos_recibidos"] + "</td></tr>"))
         },
 
@@ -53,13 +56,14 @@
             <th scope="col">Datos Recibidos</th>
           </tr>
         </thead>
+
+        <tbody id="tabla">
+
+
+        </tbody>
+      </table>
     </div>
 
-    <tbody id="tabla">
-
-
-    </tbody>
-    </table>
     <div class="row">
       <div class="col text-center">
         <button type="button" class="btn btn-primary" onclick="cargarDatos()">Actualizar tabla!</button>
